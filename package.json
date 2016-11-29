@@ -1,0 +1,23 @@
+{
+  "name": "homebridge-http-temperature",
+  "version": "0.0.1",
+  "description": "https plugin for homebridge",
+  "license": "ISC",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  },
+  "author": {
+    "name": "Fabrice Masachs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fabricemasachs/homebridge-http-temperature.git"
+  },
+  "dependencies": {
+    "sync-request": "^2.1.0"
+  }
+}

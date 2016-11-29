@@ -1,0 +1,22 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CD:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "031-45-154"
+    },
+
+    "description": "Configuration file.",
+
+    "platforms": [],
+
+    "accessories": [
+        {
+            "accessory": "HttpTemperature",
+            "name": "DS18B20 Bathroom",
+            "url": "10.0.1.11",
+            "sendimmediately": "",
+            "http_method": "GET",
+        }
+    ]
+}
