@@ -19,8 +19,8 @@ function HttpTemperature(log, config) {
     this.http_method = config["http_method"] || "GET";
     this.sendimmediately = config["sendimmediately"] || "";
     this.name = config["name"];
-    this.manufacturer = config["manufacturer"] || "Dallas Manufacturer";
-    this.model = config["model"] || "DS18B20 Model";
+    this.manufacturer = config["manufacturer"] || "Dallas";
+    this.model = config["model"] || "DS18B20";
     this.serial = config["serial"] || "None";
 }
 
@@ -42,7 +42,8 @@ HttpTemperature.prototype = {
         var body;
 
 	var res = request(this.http_method, this.url, {});
-	if(res.statusCode > 400){
+
+	if (res.statusCode > 400) {
 	  this.log('HTTP power function failed');
 	  callback(error);
 	} else {
